@@ -22,3 +22,13 @@ DB_STRING = <DB_CONNECTION_STRING>
 - GET_URL can be customised. Read more about it [here](https://developer.github.com/v3/repos/)
 - Read about DB_CONNECTION_STRING [here](https://docs.sqlalchemy.org/en/13/core/engines.html)
 - To run the app: ```python bot.py```
+
+#### To deploy to AWS Lambda
+- Combine all code into the ```lambda.py``` file
+- On Windows, move the file into **venv** &#8594; **Libs** &#8594; **site-packages**
+- Replace the ```psycopg2``` folder according to the instruction [here](https://github.com/jkehler/awslambda-psycopg2)
+- Zip the content of **site-packages**
+- Upload to AWS Lambda
+- Raise execution time limit to 30 seconds just to be safe
+- Change **Handler** to ```lambda.lambda_handler```
+- If you are still confused, take a look at the ```deploy``` folder to see an example

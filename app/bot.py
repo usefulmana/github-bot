@@ -27,8 +27,12 @@ def initialize_database():
     Repo.metadata.create_all(db)
 
 
-if __name__ == '__main__':
+def run():
     initialize_database()
     parse_response(get_repos())
     print("Done!")
+
+
+if __name__ == '__main__':
+    run()
 

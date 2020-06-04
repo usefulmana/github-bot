@@ -1,9 +1,8 @@
 import os
-from dotenv import load_dotenv
 import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-
+from dotenv import load_dotenv
 
 load_dotenv()
 # Load Env Vars
