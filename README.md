@@ -31,4 +31,4 @@ DB_STRING = <DB_CONNECTION_STRING>
 - Upload to AWS Lambda
 - Raise execution time limit to 30 seconds just to be safe
 - Change **Handler** to ```lambda.lambda_handler```
-- If you are still confused, take a look at the ```deploy``` folder to see an example
+- If you are still confused, unzip the ```deploy.zip``` file to see an example
